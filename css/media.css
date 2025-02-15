@@ -1,0 +1,149 @@
+/* Mobile devices (up to 600px) */
+@media (max-width: 700px) {
+
+    .v {
+        width: 700px;
+        height: 480px;
+        /* background-color: red; */
+        margin: auto;
+        font-size: 20px;
+    }
+
+
+    .container1 .part1 #slidbar {
+        display: none;
+    }
+
+    .container1 .part3 {
+        display: none !important;
+    }
+
+    .container2 .sidebar {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        position: fixed;
+        bottom: 0;
+        z-index: 15;
+        gap: 90px;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .container1 .part3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #searchbar {
+        border: 1px solid rgba(255, 255, 255, 0.272);
+        border-radius: 23px;
+        /* margin: 0; */
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #mic {
+        display: none !important;
+    }
+
+    .text-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        margin-left: 52px !important;
+        /* border: 1px solid white; */
+        /* padding: 12px; */
+        width: 100vh !important;
+        /* margin: -9px 0 0 94px; */
+        white-space: nowrap;
+        padding: 6px;
+        overflow-x: auto;
+        /* स्क्रॉलबार दिखाने के लिए */
+        scroll-behavior: smooth;
+
+    }
+
+    .text-slider button {
+        display: none;
+    }
+
+    .textContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+    }
+
+    .section2 .shorts {
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        grid-template-columns: 2fr 2fr;
+        place-items: center;
+        column-gap: 25px;
+        row-gap: 20px;
+
+
+    }
+
+    .section2 .short video {
+        width: 350px !important;
+        /* background-color: red; */
+        margin: auto;
+    }
+
+    .section2 .short .sd {
+        font-size: 20px !important;
+
+    }
+
+
+
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .section1 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Medium columns for tablets */
+    }
+}
+
+/* Desktop (901px and above) */
+@media (min-width: 901px) {
+    .section1 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Larger columns for desktop */
+    }
+}
+
+@keyframes bgcolor {
+    0% {
+        /* background-color: red; */
+        height: 54px;
+        width: 54px;
+        text-align: center;
+
+    }
+
+    
+    100% {
+        /* background-color: green; */
+        height: 74px;
+        width: 74px;
+        text-align: center;
+    }
+}

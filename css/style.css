@@ -1,0 +1,699 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.container1 img {
+    height: 36px;
+}
+
+.container1 .part1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    font-size: 22px;
+    font-family: "Baloo Bhai 2", serif;
+}
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.container1 .part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    font-size: 22px;
+}
+
+#slidbar {
+    cursor: pointer;
+}
+
+.container1 .part3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+#searchbar {
+    border: 1px solid rgba(255, 255, 255, 0.272);
+    border-radius: 23px;
+    margin: 0;
+}
+
+#searchbar input[type="text"] {
+    /* border: 1px solid white; */
+    background-color: transparent;
+    height: 32px;
+    width: 571px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    font-size: 20px;
+    border: none;
+    /* padding: 5px; */
+    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-left: 17px;
+    /* outline: none; */
+    outline-color: rgb(98, 0, 255);
+}
+
+#searchbar input[type="text"]::placeholder {
+    color: gray;
+    opacity: 0.8;
+    padding: 23px;
+}
+
+
+#searchbar span i {
+    padding: 8px;
+    width: 46px;
+    height: 28px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #424141;
+}
+
+#mic {
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Yeh extra content ko chhupa dega */
+    cursor: pointer;
+}
+
+.part3 {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    font-size: 17px;
+}
+
+#create {
+    border: 1px solid white;
+    padding: 5px;
+    width: 85px;
+    /* height: 32px; */
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    border-radius: 19px;
+    background-color: #42414198;
+    border: none;
+    cursor: pointer;
+}
+
+#create i {
+    font-size: 30px;
+}
+
+#bell {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.shorts img {
+    height: 24px;
+}
+
+.sidebar i {
+    font-size: 20px;
+}
+
+.container2 {
+    position: absolute;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 13px;
+    /* border: 1px solid white ; */
+    width: 70px;
+    transition: width 0.5s linear;
+    /* max-width: 200px; */
+    padding: 12px 0;
+    height: auto;
+    margin-top: 22px;
+
+}
+#profile{
+    cursor: pointer;
+}
+
+.sidebar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.extend {
+    display: block !important;
+    text-align: left !important;
+    justify-items: center !important;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    width: 160px;
+    padding: 12px;
+    font-size: 15px;
+    margin: 12px;
+    /* background-color: rgba(255, 255, 255, 0.074); */
+}
+
+.extend:hover {
+    background-color: rgba(255, 255, 255, 0.17);
+    cursor: pointer;
+    /* Yeh hand (finger) symbol dikhayega */
+}
+
+.extend-width {
+    width: 200px;
+}
+
+.text-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    /* border: 1px solid white; */
+    /* padding: 12px; */
+    width: 92vw;
+    margin: -9px 0 0 94px;
+    white-space: nowrap;
+    padding: 6px;
+    overflow-x: auto;
+    /* स्क्रॉलबार दिखाने के लिए */
+    scroll-behavior: smooth;
+}
+
+.text-slider button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.736);
+    border-radius: 2%;
+    height: 55px;
+    width: 45px;
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.719);
+    /* border-radius: 50%; */
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.text-slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge ke liye */
+}
+
+.text-slider .left {
+    margin-left: -1401px;
+}
+
+.text-slider .right {
+    margin-left: 1403px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.tab {
+    padding: 5px 15px;
+    /* border: 1px solid white; */
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.17);
+    width: auto;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.tab:active {
+    background-color: white;
+    color: black;
+}
+
+/* video & shorts content*/
+
+.Content {
+    /* background-color: red; */
+    width: 89vw;
+    height: 40vw;
+    margin: auto;
+}
+
+/* Scrollbar ki width aur height kam karna */
+::-webkit-scrollbar {
+    width: 19px;
+    /* Vertical scrollbar ke liye */
+    height: 5px;
+    /* Horizontal scrollbar ke liye */
+}
+
+/* Scrollbar track (background area) */
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background ko invisible karne ke liye */
+}
+
+/* Scrollbar thumb (jo move hoti hai) */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    /* YouTube jaisa halka white color */
+    /* border-radius: 10px;  Smooth rounded edges */
+    height: 10px;
+}
+
+/* Hover karne par color change hoga */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*section 1*/
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+}
+
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* इससे व्हाइट स्पेस इश्यू दूर होगा */
+    border-radius: 10px;
+    transition:  border-radius 0.3s linear;
+}
+.v:hover {
+    /* transform: scale(1.03); */
+    /* z-index: 10;  */
+    transition: transform 0.3s linear;
+  }
+.info p {
+    margin: 10px;
+}
+
+.views {
+    color: rgba(255, 255, 255, 0.488);
+    text-align: left;
+    margin-left: 6px;
+}
+/*section2*/
+.section2{
+    margin: auto;
+    padding-top: 34px;
+}
+.shorts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+.shorts video{
+    width: 200px;
+}
+.sd p{
+ margin: 0;
+ text-align: center;
+}
+/*section-3*/
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    margin-top: 40px;
+}
+/*section 4*/
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    margin-top: 40px;
+
+    /*section 5*/
+}
+.section5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    margin-top: 40px;
+}
+
+/*section6*/
+.section6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    margin-top: 40px;
+}
+
+/* section7 */
+.section7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    margin-top: 40px;
+}
+.createSection{
+    /* background-color: rgba(0, 0, 0, 0.952); */
+    height: 150px;
+    width:  160px;
+    position: absolute;
+    top: 72px;
+    right: 67px;
+    border-radius: 12px;
+    backdrop-filter: blur(32px);
+    /* border: 1px dotted white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+.csDisplayNone{
+    display: none;
+}
+.cs1{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+}
+video::-webkit-media-controls{
+    display: none;
+}
+.show-control::-webkit-media-controls{
+display: flex;
+}
+.myAccount{
+    position: absolute;
+    height: auto;
+    width:  310px;
+    background-color: rgba(0, 0, 0, 0.718);
+    border-radius: 12px;
+    backdrop-filter:  blur(150px);
+    /* border: 1px dotted white; */
+    z-index: 1000;
+    top: 19px;
+    right: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 54px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.myAccount img{
+    height: 43px;
+}
+.cimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: 40px;
+}
+.myAccount #a1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top:  12px;
+    margin-right:   40px;
+}
+
+.myAccount #a1 p{
+    /* margin-left: 50px; */
+    /* position: relative; */
+    margin:  0 0 0 45px;
+}
+.chanalInfo p:nth-of-type(2) {
+    color: rgb(0, 30, 255); 
+    font-weight: bold;
+}
+.myAccount #a2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+.myAccount #a2 div{
+    /* position: relative; */
+    margin-left:  44px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.switchA span:nth-of-type(2){
+    margin-left: 54px;
+}
+.myAccount #a3{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 45px;
+    gap: 12px;
+}
+.myAccount #a3 div{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+.myAccount #a4{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 45px;
+    gap: 12px;
+}
+.myAccount #a4 div{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+.myAccount #a5{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 45px;
+    gap: 12px;
+    
+}
+.myAccount #a6{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 45px;
+    gap: 12px;
+    padding-bottom: 45px;
+}
+.myAccount #a6 div{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+.myAccount .a1 div:hover{
+    background-color: rgba(255, 255, 255, 0.167);
+    border-radius: 7px;
+}
+.myAccount .a1 div{
+    padding: 5px;
+    width: 200px;
+}
+#a5:hover{
+    background-color: rgba(255, 255, 255, 0.167);
+    border-radius: 7px;
+    
+}
+.microphpne{
+    height: 333px;
+    width: 519px;
+    background-color: rgb(39, 37, 37);
+    position: absolute;
+    top: 76px;
+    left: 424px;
+    border-radius: 15px;
+    display: none;
+
+}
+.microphpne p{
+    margin-left: 45px;
+    font-size: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.microphpne i{
+    margin-left: 209px;
+    margin-top: 83px;
+    font-size: 50px;
+    /* border: 1px solid white; */
+    height: 54px;
+    width: 54px;
+    /* margin: auto; */
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    /* background-color: red; */
+    box-shadow:0px 0px 15px red;
+    animation: bgcolor 0.8s infinite alternate;
+    display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;
+}
+.notification{
+    height: auto;
+    width: 500px;
+    top: 72px;
+    right: 34px;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    border-radius: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 15px;
+    display: none;
+}
+.notification > div:hover{
+    background-color: rgba(0, 0, 0, 0.428);
+    border-radius: 12px;
+}
+.notification div{
+    text-align: left;
+}
+.notification .noti{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.notification #noti1{
+    gap: 180px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.notification #noti2{
+    /* gap: 345px; */
+    /* padding: 25px; */
+    font-size: 13px;
+}
+#noti2 div:nth-child(3) img{
+ width: 85px;
+}
+#noti2 div:nth-child(1) img{
+ width: 50px;
+ border-radius: 50%;
+}
+.notification #noti3{
+    /* gap: 345px; */
+    /* padding: 25px; */
+    font-size: 13px;
+}
+#noti3 div:nth-child(3) img{
+ width: 85px;
+ margin-left: 12px;
+}
+#noti3 div:nth-child(1) img{
+ width: 50px;
+ border-radius: 50%;
+}
+
+.notification #noti4{
+    /* gap: 345px; */
+    /* padding: 25px; */
+    font-size: 13px;
+}
+#noti4 div:nth-child(3) img{
+ width: 85px;
+}
+#noti4 div:nth-child(1) img{
+ width: 50px;
+ border-radius: 50%;
+}
+
+.notification #noti5{
+    /* gap: 345px; */
+    /* padding: 25px; */
+    font-size: 13px;
+}
+#noti5 div:nth-child(3) img{
+ width: 85px;
+ margin-left: 5px;
+}
+#noti5 div:nth-child(1) img{
+ width: 50px;
+ border-radius: 50%;
+}
+
+.notification #noti6{
+    /* gap: 345px; */
+    /* padding: 25px; */
+    font-size: 13px;
+}
+#noti6 div:nth-child(3) img{
+ width: 85px;
+ margin-left: 28px;
+}
+#noti6 div:nth-child(1) img{
+ width: 50px;
+ border-radius: 50%;
+}
